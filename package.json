@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "parcel index.html",
+    "proxy": "node server.js",
     "test": "jest",
     "coverage": "jest --collect-coverage",
     "build": "parcel build index.html --dist-dir docs  --no-source-maps --public-url ./"
@@ -8,8 +9,9 @@
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@parcel/babel-preset-env": "^2.7.0",
-    "babel-jest": "^29.0.3",
-    "jest": "^29.0.3",
+    "babel-jest": "^30.5.2",
+    "express": "^5.3.0",
+    "jest": "^30.5.2",
     "parcel": "^2.7.0"
   },
   "dependencies": {

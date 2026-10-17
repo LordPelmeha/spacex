@@ -15,3 +15,43 @@
     overflow-y: scroll;
     border: black 1px solid;
 }
+
+#listContainer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listContainer li{
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+#listContainer li:hover,
+#listContainer li.active{
+    background: #ffe8e6;
+}
+
+#map .launchpad{
+    stroke: #ffffff;
+    stroke-width: 1;
+    cursor: pointer;
+    transition: fill 150ms ease;
+}
+
+#map .launchpad--active{
+    fill: #f77f00;
+    stroke: #333333;
+    stroke-width: 2;
+}
+
+#map .launchpad-label{
+    font-size: 7px;
+    fill: #333333;
+    pointer-events: none;
+}
+
+#map .launchpad-label--active{
+    font-weight: bold;
+    fill: #d00000;
+}

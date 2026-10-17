@@ -1,0 +1,20 @@
+{
+ "message": "The SpaceX API, revived by Pipeworx. api.spacexdata.com was archived in June 2026 and its origin is offline; these routes serve the same datasets rebuilt from the ORIGINAL upstream sources (Launch Library 2 + space-track.org), synced 4x daily — so the data is current again, not frozen.",
+ "compatibility": "Route paths mirror the old v4 API; response schemas are simplified rebuilds, not byte-identical v4. Field-level differences are documented at the docs URL.",
+ "routes": {
+  "GET /spacex/v4/launches/latest": "most recent launch",
+  "GET /spacex/v4/launches/next": "next scheduled launch",
+  "GET /spacex/v4/launches/upcoming": "upcoming launches (next scheduled)",
+  "GET /spacex/v4/launches/past": "past launches, newest first",
+  "GET /spacex/v4/launches": "past launches + next scheduled",
+  "GET /spacex/v4/rockets": "SpaceX launch vehicles",
+  "GET /spacex/v4/crew": "crewed-flight astronauts",
+  "GET /spacex/v4/starlink": "Starlink satellites (space-track.org)"
+ },
+ "params": {
+  "limit": "optional, arrays only — e.g. ?limit=5"
+ },
+ "docs": "https://pipeworx.io/blog/spacex-api-revived",
+ "mcp_endpoint": "https://gateway.pipeworx.io/spacex/mcp",
+ "source": "https://pipeworx.io"
+}
